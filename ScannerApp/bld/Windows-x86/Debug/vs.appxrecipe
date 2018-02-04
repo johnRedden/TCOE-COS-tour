@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>SAMS-COMPUTER</Machine>
+    <WindowsUser>nivag</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>debug|x86</SolutionConfiguration>
+    <PackageArchitecture>x86</PackageArchitecture>
+    <PackageIdentityName>76e485a0-7d90-11e7-9f92-0df77bdf432d</PackageIdentityName>
+    <PackageIdentityPublisher>CN=Apache Cordova Team</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\Users\nivag\Documents\GitHub\ScannerApp\ScannerApp\platforms\windows\build\windows\bld\</IntermediateOutputPath>
+    <RemoteDeploymentType>
+    </RemoteDeploymentType>
+    <PackageRegistrationPath>
+    </PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>
+    </WindowsSdkPath>
+    <LayoutDir>C:\Users\nivag\Documents\GitHub\ScannerApp\ScannerApp\platforms\windows\build\windows\debug\x86\win10\AppX</LayoutDir>
+    <RegisteredManifestChecksum>A1AE1FFF822BFBD11591134947A8522EF135EF4CF07087FECF38751F1FBFAA9C</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>io.cordova.myapp804c9b_1.0.0.0_x86__h35559jr9hy9m</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>io.cordova.myapp804c9b_h35559jr9hy9m!io.cordova.myapp804c9b</RegisteredUserModeAppID>
+    <RegisteredPackageID>io.cordova.myapp804c9b</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Apache Cordova Team</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\nivag\Documents\GitHub\ScannerApp\ScannerApp\platforms\windows\build\windows\debug\x86\win10\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-08-10T07:17:41.807</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\nivag\Documents\GitHub\ScannerApp\ScannerApp\platforms\windows\plugins\phonegap-plugin-barcodescanner\x86\ZXing.winmd">
+      <PackagePath>ZXing.winmd</PackagePath>
+      <Modified>2017-08-10T05:55:14.642</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nivag\Documents\GitHub\ScannerApp\ScannerApp\platforms\windows\images\SplashScreen.scale-100.png">
+      <PackagePath>images\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-08-10T05:55:11.787</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nivag\Documents\GitHub\ScannerApp\ScannerApp\platforms\windows\images\Square150x150Logo.scale-100.png">
+      <PackagePath>images\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-08-10T05:55:12.167</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nivag\Documents\GitHub\ScannerApp\ScannerApp\platforms\windows\images\Square30x30Logo.scale-100.png">
+      <PackagePath>images\Square30x30Logo.scale-100.png</PackagePath>
+      <Modified>2017-08-10T05:55:12.244</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nivag\Documents\GitHub\ScannerApp\ScannerApp\platforms\windows\images\Square310x310Logo.scale-100.png">
+      <PackagePath>images\Square310x310Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-08-10T05:55:12.422</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nivag\Documents\GitHub\ScannerApp\ScannerApp\platforms\windows\images\Square44x44Logo.scale-100.png">
+      <PackagePath>images\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-08-10T05:55:12.425</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nivag\Documents\GitHub\ScannerApp\ScannerApp\platforms\windows\images\Square70x70Logo.scale-100.png">
+      <PackagePath>images\Square70x70Logo.scale-100.png</PackagePath>
+      <Modified>2017-08-10T05:55:13.022</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nivag\Documents\GitHub\ScannerApp\ScannerApp\platforms\windows\images\Square71x71Logo.scale-100.png">
+      <PackagePath>images\Square71x71Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-08-10T05:55:13.250</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nivag\Documents\GitHub\ScannerApp\ScannerApp\platforms\windows\images\StoreLogo.scale-100.png">
+      <PackagePath>images\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-08-10T05:55:13.335</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nivag\Documents\GitHub\ScannerApp\ScannerApp\platforms\windows\images\Wide310x150Logo.scale-100.png">
+      <PackagePath>images\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-08-10T05:55:13.705</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nivag\Documents\GitHub\ScannerApp\ScannerApp\platforms\windows\www\images\cordova.png">
+      <PackagePath>www\images\cordova.png</PackagePath>
+      <Modified>2017-08-10T05:55:10.597</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nivag\Documents\GitHub\ScannerApp\ScannerApp\platforms\windows\www\images\Logo.png">
+      <PackagePath>www\images\Logo.png</PackagePath>
+      <Modified>2017-08-10T05:55:10.558</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nivag\Documents\GitHub\ScannerApp\ScannerApp\platforms\windows\www\images\LogoMod.png">
+      <PackagePath>www\images\LogoMod.png</PackagePath>
+      <Modified>2017-08-10T05:55:10.582</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nivag\Documents\GitHub\ScannerApp\ScannerApp\platforms\windows\www\cordova-js-src\confighelper.js">
+      <PackagePath>www\cordova-js-src\confighelper.js</PackagePath>
+      <Modified>2017-08-10T07:17:35.199</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nivag\Documents\GitHub\ScannerApp\ScannerApp\platforms\windows\www\cordova-js-src\exec.js">
+      <PackagePath>www\cordova-js-src\exec.js</PackagePath>
+      <Modified>2017-08-10T07:17:35.200</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nivag\Documents\GitHub\ScannerApp\ScannerApp\platforms\windows\www\cordova-js-src\platform.js">
+      <PackagePath>www\cordova-js-src\platform.js</PackagePath>
+      <Modified>2017-08-10T07:17:35.201</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nivag\Documents\GitHub\ScannerApp\ScannerApp\platforms\windows\www\cordova-js-src\splashscreen.js">
+      <PackagePath>www\cordova-js-src\splashscreen.js</PackagePath>
+      <Modified>2017-08-10T07:17:35.202</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nivag\Documents\GitHub\ScannerApp\ScannerApp\platforms\windows\www\cordova.js">
+      <PackagePath>www\cordova.js</PackagePath>
+      <Modified>2017-08-10T05:55:10.386</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nivag\Documents\GitHub\ScannerApp\ScannerApp\platforms\windows\www\cordova_plugins.js">
+      <PackagePath>www\cordova_plugins.js</PackagePath>
+      <Modified>2017-08-10T07:17:35.202</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nivag\Documents\GitHub\ScannerApp\ScannerApp\platforms\windows\www\plugins\cordova-plugin-dialogs\src\windows\NotificationProxy.js">
+      <PackagePath>www\plugins\cordova-plugin-dialogs\src\windows\NotificationProxy.js</PackagePath>
+      <Modified>2017-08-10T07:17:35.211</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nivag\Documents\GitHub\ScannerApp\ScannerApp\platforms\windows\www\plugins\cordova-plugin-dialogs\www\notification.js">
+      <PackagePath>www\plugins\cordova-plugin-dialogs\www\notification.js</PackagePath>
+      <Modified>2017-08-10T07:17:35.212</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nivag\Documents\GitHub\ScannerApp\ScannerApp\platforms\windows\www\plugins\phonegap-plugin-barcodescanner\src\windows\BarcodeScannerProxy.js">
+      <PackagePath>www\plugins\phonegap-plugin-barcodescanner\src\windows\BarcodeScannerProxy.js</PackagePath>
+      <Modified>2017-08-10T07:17:35.213</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nivag\Documents\GitHub\ScannerApp\ScannerApp\platforms\windows\www\plugins\phonegap-plugin-barcodescanner\www\barcodescanner.js">
+      <PackagePath>www\plugins\phonegap-plugin-barcodescanner\www\barcodescanner.js</PackagePath>
+      <Modified>2017-08-10T07:17:35.214</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nivag\Documents\GitHub\ScannerApp\ScannerApp\platforms\windows\www\scripts\customscripts\index.js">
+      <PackagePath>www\scripts\customscripts\index.js</PackagePath>
+      <Modified>2017-08-10T05:55:10.658</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nivag\Documents\GitHub\ScannerApp\ScannerApp\platforms\windows\www\scripts\customscripts\login.js">
+      <PackagePath>www\scripts\customscripts\login.js</PackagePath>
+      <Modified>2017-08-10T05:55:10.702</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nivag\Documents\GitHub\ScannerApp\ScannerApp\platforms\windows\www\scripts\customscripts\notificationScript.js">
+      <PackagePath>www\scripts\customscripts\notificationScript.js</PackagePath>
+      <Modified>2017-08-10T07:17:35.215</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nivag\Documents\GitHub\ScannerApp\ScannerApp\platforms\windows\www\scripts\customscripts\scannerScript.js">
+      <PackagePath>www\scripts\customscripts\scannerScript.js</PackagePath>
+      <Modified>2017-08-10T05:55:10.729</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nivag\Documents\GitHub\ScannerApp\ScannerApp\platforms\windows\www\scripts\jquery.min.js">
+      <PackagePath>www\scripts\jquery.min.js</PackagePath>
+      <Modified>2017-08-10T07:17:35.216</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nivag\Documents\GitHub\ScannerApp\ScannerApp\platforms\windows\www\scripts\jquery.mobile-1.4.5.min.js">
+      <PackagePath>www\scripts\jquery.mobile-1.4.5.min.js</PackagePath>
+      <Modified>2017-08-10T07:17:35.219</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nivag\Documents\GitHub\ScannerApp\ScannerApp\platforms\windows\www\scripts\platformOverrides.js">
+      <PackagePath>www\scripts\platformOverrides.js</PackagePath>
+      <Modified>2017-08-10T05:55:11.065</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nivag\Documents\GitHub\ScannerApp\ScannerApp\platforms\windows\www\scripts\winstore-jscompat.js">
+      <PackagePath>www\scripts\winstore-jscompat.js</PackagePath>
+      <Modified>2017-08-10T05:55:11.460</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nivag\Documents\GitHub\ScannerApp\ScannerApp\platforms\windows\www\WinJS\js\base.js">
+      <PackagePath>www\WinJS\js\base.js</PackagePath>
+      <Modified>2017-08-10T05:55:10.369</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nivag\Documents\GitHub\ScannerApp\ScannerApp\platforms\windows\www\css\customcss\index.css">
+      <PackagePath>www\css\customcss\index.css</PackagePath>
+      <Modified>2017-08-10T07:17:35.203</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nivag\Documents\GitHub\ScannerApp\ScannerApp\platforms\windows\www\css\jquery.mobile-1.4.5.min.css">
+      <PackagePath>www\css\jquery.mobile-1.4.5.min.css</PackagePath>
+      <Modified>2017-08-10T07:17:35.205</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nivag\Documents\GitHub\ScannerApp\ScannerApp\platforms\windows\www\css\notification.css">
+      <PackagePath>www\css\notification.css</PackagePath>
+      <Modified>2017-08-10T07:17:35.206</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nivag\Documents\GitHub\ScannerApp\ScannerApp\platforms\windows\www\css\plugin-barcodeScanner.css">
+      <PackagePath>www\css\plugin-barcodeScanner.css</PackagePath>
+      <Modified>2017-08-10T07:17:35.207</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nivag\Documents\GitHub\ScannerApp\ScannerApp\platforms\windows\www\css\splashscreen.css">
+      <PackagePath>www\css\splashscreen.css</PackagePath>
+      <Modified>2017-08-10T05:55:10.482</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nivag\Documents\GitHub\ScannerApp\ScannerApp\platforms\windows\www\css\images\ajax-loader.gif">
+      <PackagePath>www\css\images\ajax-loader.gif</PackagePath>
+      <Modified>2017-08-10T05:55:10.454</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nivag\Documents\GitHub\ScannerApp\ScannerApp\platforms\windows\www\index.html">
+      <PackagePath>www\index.html</PackagePath>
+      <Modified>2017-08-10T05:55:10.628</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nivag\Documents\GitHub\ScannerApp\ScannerApp\platforms\windows\config.xml">
+      <PackagePath>config.xml</PackagePath>
+      <Modified>2017-08-10T07:17:35.054</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.15063.0\Windows.winmd">
+      <PackagePath>WinMetadata\Windows.winmd</PackagePath>
+      <Modified>2017-05-23T04:37:56.082</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nivag\Documents\GitHub\ScannerApp\ScannerApp\platforms\windows\build\windows\debug\x86\win10\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-08-10T07:17:38.002</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

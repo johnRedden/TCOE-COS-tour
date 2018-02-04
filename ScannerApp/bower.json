@@ -1,0 +1,6 @@
+{
+  "name": "ScannerApp",
+  "dependencies": {
+    "jQuery": "3.2.1"
+  }
+}

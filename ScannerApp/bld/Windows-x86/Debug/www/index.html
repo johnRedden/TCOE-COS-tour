@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+         
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+ -->  
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="shortcut icon" href="#" />
+        <!--
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        -->
+         
+
+        <style>
+            .visited {
+                background-color: lightgreen !important;
+                color: white !important;
+            }
+            .QRscanBtn{
+                margin:auto;
+                width:50% !important;
+            }
+            .message{
+                background-color:white;
+            }
+            h1.ui-title {
+                margin: 1px;
+                padding: 1px;
+                /*padding:.7em 0;*/
+            }
+  
+        </style>
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+        
+        <title>TCOE Career Expo App</title>
+
+    </head>
+    <body>
+
+        
+        <!-- Main app Page-->
+        <div data-role="page" id="pageHome">
+            <div data-role="header" data-id="foo1" >
+                <a href="#" class="myScore ui-btn ui-btn-inline ui-corner-all ui-icon-star ui-btn-icon-left">0</a>
+                <a href="#dialogLogin" class="myDialog ui-btn ui-btn-inline ui-corner-all ui-icon-user ui-btn-icon-right ">login</a>
+                <h1><img id="COSbanner" src="images/Logo.png" alt="Logo" align="middle" style="width:100%;height:58px;"></h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li> <a href="#pageHome" data-transition="none" data-icon="home" class="ui-btn-active ui-state-persist">Home</a> </li>
+                        <li> <a href="#pageTour" data-transition="none" data-icon="navigation">Tour</a> </li>
+                        <li> <a href="#pageEvents" data-transition="none" data-icon="calendar">Events</a> </li>
+                        <li> <a href="#pageSurvey" data-transition="none" data-icon="edit">Survey</a> </li>
+                    </ul>
+                </div>
+            </div>              
+
+            <div data-role="main" class="ui-content">
+                <!-- Cordova Load Screen-->
+                <p>Welcome to TCOE Career Exp.</p>
+                <div id="appMessage" class="ui-content message">App initializing...</div>
+            </div>
+                        
+            <div data-role="footer" data-id="foo2" data-position="fixed">
+                <h1>TCOE Fixed Footer</h1>
+            </div>
+        </div> 
+        <!-- QR Scanner Page-->
+        <div data-role="page" id="pageTour">
+            <div data-role="header" data-id="foo1" >
+                <a href="#" class="myScore ui-btn ui-btn-inline ui-corner-all ui-icon-star ui-btn-icon-left">0</a>
+                <a href="#dialogLogin" class="myDialog ui-btn ui-btn-inline ui-corner-all ui-icon-user ui-btn-icon-right ">login</a>
+                <h1><img src="images/Logo.png" alt="Logo" align="middle" style="width:114px;height:58px;" ></h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li> <a href="#pageHome" data-transition="none" data-icon="home">Home</a> </li>
+                        <li> <a href="#pageTour" data-transition="none" data-icon="navigation" class="ui-btn-active ui-state-persist">Tour</a> </li>
+                        <li> <a href="#pageEvents" data-transition="none" data-icon="calendar">Events</a> </li>
+                        <li> <a href="#pageSurvey" data-transition="none" data-icon="edit">Survey</a> </li>
+                    </ul>
+                </div>
+            </div> 
+
+            <div data-role="main" class="ui-content">
+                <div id="locationMessage" class="">Please Login.</div>
+                <button id="scanQRcodeBtn" class="ui-btn QRscanBtn ui-icon-camera ui-btn-icon-left">QR Scan QR</button>
+                <p>Locations to visit:</p>
+                <ul id="locationList" data-role="listview">
+                    <li data-icon="location" ><a class="visited" href="#">Loading...</a></li>
+                </ul>
+                <br />
+                <p>Visited locations:</p>
+                <ul id="visitedLocationList" data-role="listview">
+                    <li data-icon="location"><a class="visited" href="#">Please sign in.</a></li>
+                </ul>
+                
+            </div>
+
+            <div data-role="footer" data-id="foo2" data-position="fixed">
+                <h1>TCOE Fixed Footer</h1>
+            </div>
+        </div> 
+        <!-- Events page-->
+        <div data-role="page" id="pageEvents">
+            <div data-role="header" data-id="foo1" >
+                <a href="#" class="myScore ui-btn ui-btn-inline ui-corner-all ui-icon-star ui-btn-icon-left">0</a>
+                <a href="#dialogLogin" class="myDialog ui-btn ui-btn-inline ui-corner-all ui-icon-user ui-btn-icon-right ">login</a>
+                <h1><img src="images/Logo.png" alt="Logo" align="middle" style="width:114px;height:58px;"></h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li> <a href="#pageHome" data-transition="none" data-icon="home">Home</a> </li>
+                        <li> <a href="#pageTour" data-transition="none" data-icon="navigation">Tour</a> </li>
+                        <li> <a href="#pageEvents" data-transition="none" data-icon="calendar" class="ui-btn-active ui-state-persist">Events</a> </li>
+                        <li> <a href="#pageSurvey" data-transition="none" data-icon="edit">Survey</a> </li>
+                    </ul>
+                </div>
+            </div> 
+
+            <div data-role="main" class="ui-content">
+                <p>Check the events you plan on attending.</p>
+  
+                              
+                <ul id="eventList" data-role="listview">
+                     
+                    <!--<li data-icon="event"><a class="visited" href="#">Loading...</a></li>-->
+                </ul>
+                        <!--<label for="registration">Registration</label>
+                        <input type="checkbox" id="registration" checked>
+                    
+                        <label for="lunch">Lunch</label>
+                        <input type="checkbox" id="lunch" checked>
+                   
+                        <label for="vrdemo">VR Demo</label>
+                        <input type="checkbox" id="vrdemo">
+                   
+                        <label for="mathdemo">Math Demo</label>
+                        <input type="checkbox" id="mathdemo">
+                   
+                        <label for="resemedemo">Reseme Demo</label>
+                        <input type="checkbox" id="resemedemo">-->
+                   
+            
+                <p>Hopefully with notifications</p>
+            </div>
+
+            <div data-role="footer" data-id="foo2" data-position="fixed">
+                <h1>TCOE Fixed Footer</h1>
+            </div>
+        </div> 
+        <!-- Survey Page -->
+        <div data-role="page" id="pageSurvey">
+            <div data-role="header" data-id="foo1" >
+                <a href="#" class="myScore ui-btn ui-btn-inline ui-corner-all ui-icon-star ui-btn-icon-left">0</a>
+                <a href="#dialogLogin" class="myDialog ui-btn ui-btn-inline ui-corner-all ui-icon-user ui-btn-icon-right ">login</a>
+                <h1><img src="images/Logo.png" alt="Logo" align="middle" style="width:114px;height:58px;"></h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li> <a href="#pageHome" data-transition="none" data-icon="home">Home</a> </li>
+                        <li> <a href="#pageTour" data-transition="none" data-icon="navigation">Tour</a> </li>
+                        <li> <a href="#pageEvents" data-transition="none" data-icon="calendar">Events</a> </li>
+                        <li> <a href="#pageSurvey" data-transition="none" data-icon="edit" class="ui-btn-active ui-state-persist">Survey</a> </li>
+                    </ul>
+                </div>
+            </div> 
+
+            <div data-role="main" class="ui-content">
+
+                <p id="surveyOut">Please Log in</p>
+                <p id="surveyNotTime">It's not time for survey yet. Check again when informed.</p>
+                <iframe id="surveyLink" src=""  style='height: 1200px; width: 100%;'  frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+        
+            </div>
+
+            <div data-role="footer" data-id="foo2" data-position="fixed">
+                <h1>TCOE Fixed Footer</h1>
+            </div>
+        </div> 
+
+        <!-- Dialog pages (aka Modals)-->
+        <div data-role="page" data-dialog="true" id="dialogLogin">
+            <div data-role="header">
+                <h1>App Login/Logout</h1>
+            </div>
+
+            <div data-role="main" class="ui-content">
+                <p id="logQRmessage">Scan Using QR Code</p>
+                <button id="userQRlogBtn">QR Login</button>
+                <p id="logMessage">Or Registration number found in your packet.</p>
+                <input id="userRegNumber" type="number" name="number" pattern="[0-9]*" placeholder="Enter Reg. Number">
+                <button id="userLogBtn">login</button>
+            </div>
+
+            <div data-role="footer">
+                <h1>TCOE App</h1>
+            </div>
+        </div> 
+        <!-- Location List Dialog for information-->
+        <div data-role="page" data-dialog="true" id="dialogLocationHint">
+            <div data-role="header">
+                <h1>Location Hint</h1>
+            </div>
+
+            <div data-role="main" class="ui-content">
+                <p id="Hint">Hints coming soon...</p>
+            </div>
+
+            <div data-role="footer">
+                <h1>TCOE App</h1>
+            </div>
+        </div> 
+
+        <!--***************************-->
+
+        <!-- Scripts -->
+        <!-- need local copy at some point -->
+        <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="scripts/customscripts/index.js"></script>
+        <script src="scripts/jquery.min.js"></script>
+        <script src="scripts/jquery.mobile-1.4.5.min.js"></script>
+ 
+        <!-- login/logout functionality -->
+        <script type="text/javascript" src="scripts/customscripts/login.js"></script>
+
+        <!-- COS QR scanner functionality -->
+        <script type="text/javascript" src="scripts/customscripts/scannerScript.js"></script>
+
+        <!-- notification functionality -->
+        <script type="text/javascript" src="scripts/customscripts/notificationScript.js"></script>
+       
+
+    </body>
+</html>
