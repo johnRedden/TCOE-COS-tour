@@ -44,6 +44,17 @@
             div#pageHome {
                 
             }
+            .center-wrapper {
+                text-align: center;
+            }
+            .center-wrapper * {
+                margin: 0 auto;
+            }
+            .COSbackground {
+                margin-top: 100px;
+                background-image: url("images/cosLight.jpg");
+                background-color: #cccccc;
+            }
   
         </style>
         <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
@@ -56,7 +67,7 @@
         
         
         <!-- Main app Page-->
-        <div data-role="page" id="pageHome">
+        <div data-role="page" id="pageHome" class="COSbackground">
             <div style="background-color:white; box-shadow:0px 5px 15px -5px" data-role="header" data-position="fixed" data-id="foo1" >
                 <a href="#dialogScore" class="myScore ui-btn ui-btn-inline ui-corner-all ui-icon-star ui-btn-icon-left">0</a>
                 <a href="#dialogLogin" class="myDialog ui-btn ui-btn-inline ui-corner-all ui-icon-user ui-btn-icon-right ">login</a>
@@ -74,6 +85,11 @@
                 <!-- Cordova Load Screen-->
                 <p>Welcome to TCOE Career Exp.</p>
                 <div id="appMessage" class="ui-content message">App initializing...</div>
+
+                <div class="ui-content center-wrapper">
+                    <img src="images/careerexpo.png" alt="TCOE Logo"><br/>
+                    <img src="images/surge.png" alt="SURGE Logo"><br/>
+                </div>
             </div>
                         
             <div data-role="footer" data-id="foo2" data-position="fixed">
@@ -81,7 +97,7 @@
             </div>
         </div> 
         <!-- QR Scanner Page-->
-        <div data-role="page" id="pageTour">
+        <div data-role="page" id="pageTour" class="COSbackground">
             <div style="background-color:white; box-shadow:0px 5px 15px -5px" data-role="header" data-position="fixed" data-id="foo1" >
                 <a href="#dialogScore" class="myScore ui-btn ui-btn-inline ui-corner-all ui-icon-star ui-btn-icon-left">0</a>
                 <a href="#dialogLogin" class="myDialog ui-btn ui-btn-inline ui-corner-all ui-icon-user ui-btn-icon-right ">login</a>
@@ -116,7 +132,7 @@
             </div>
         </div> 
         <!-- Events page-->
-        <div data-role="page" id="pageEvents">
+        <div data-role="page" id="pageEvents" class="COSbackground">
             <div style="background-color:white; box-shadow:0px 5px 15px -5px" data-role="header" data-position="fixed" data-id="foo1" >
                 <a href="#dialogScore" class="myScore ui-btn ui-btn-inline ui-corner-all ui-icon-star ui-btn-icon-left">0</a>
                 <a href="#dialogLogin" class="myDialog ui-btn ui-btn-inline ui-corner-all ui-icon-user ui-btn-icon-right ">login</a>
@@ -162,7 +178,7 @@
             </div>
         </div> 
         <!-- Survey Page -->
-        <div data-role="page" id="pageSurvey">
+        <div data-role="page" id="pageSurvey" class="COSbackground">
             <div style="background-color:white; box-shadow:0px 5px 15px -5px" data-role="header" data-position="fixed" data-id="foo1" >
                 <a href="#dialogScore" class="myScore ui-btn ui-btn-inline ui-corner-all ui-icon-star ui-btn-icon-left">0</a>
                 <a href="#dialogLogin" class="myDialog ui-btn ui-btn-inline ui-corner-all ui-icon-user ui-btn-icon-right ">login</a>
@@ -210,7 +226,7 @@
             </div>
         </div> 
         <!-- Location List Dialog for information-->
-        <div data-role="page" data-dialog="true" id="dialogLocationHint">
+        <div data-role="page" data-dialog="true" id="dialogLocationHint" class="COSbackground">
             <div data-role="header">
                 <h1>Location Hint</h1>
             </div>
@@ -225,7 +241,7 @@
         </div> 
 
         <!-- Score Modal -->
-        <div data-role="page" data-dialog="true" id="dialogScore">
+        <div data-role="page" data-dialog="true" id="dialogScore" class="COSbackground">
             <div data-role="header">
                 <h1>TCOE App Score</h1>
             </div>
