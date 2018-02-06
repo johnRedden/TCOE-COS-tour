@@ -28,15 +28,12 @@
     <allow-intent href="itms-apps:*" />
   </platform>
   <platform name="android">
-
     <icon density="ldpi" src="res/icons/android/drawable-ldpi-icon.png" />
     <icon density="mdpi" src="res/icons/android/drawable-mdpi-icon.png" />
     <icon density="hdpi" src="res/icons/android/drawable-hdpi-icon.png" />
     <icon density="xhdpi" src="res/icons/android/drawable-xhdpi-icon.png" />
     <icon density="xxhdpi" src="res/icons/android/drawable-xxhdpi-icon.png" />
     <icon density="xxxhdpi" src="res/icons/android/drawable-xxxhdpi-icon.png" />
-
-
   </platform>
   <platform name="ios">
     <icon height="57" platform="ios" src="res/icons/ios/icon.png" width="57" />
@@ -55,7 +52,6 @@
     <icon height="29" platform="ios" src="res/icons/ios/icon-small.png" width="29" />
     <icon height="58" platform="ios" src="res/icons/ios/icon-small@2x.png" width="58" />
     <icon height="87" platform="ios" src="res/icons/ios/icon-small@3x.png" width="87" />
-
   </platform>
   <platform name="windows">
     <icon src="res/icons/windows/Square150x150Logo.scale-100.png" width="150" height="150" />

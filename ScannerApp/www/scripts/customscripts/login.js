@@ -226,12 +226,12 @@
             var alreadyFound = visitedLocationKeys.indexOf(locationKeys[i]);
             if (alreadyFound < 0) { //not found yet
                 //console.log("The " + data.key + " text is " + data.val().text);                                   
-                newListHtml += "<li id='" + locationKeys[i] + "' data-icon='location'><a href='#dialogLocationHint' >" + locationObjs[i].text + "<span class='ui-li-count'>" + locationObjs[i].points + "</span></a></li>";
+                newListHtml += "<li id='" + locationKeys[i] + "' data-icon='location'><a href='#dialogLocationHint' class='notVisited'>" + locationObjs[i].text + "<span class='ui-li-count'>" + locationObjs[i].points + "</span></a></li>";
             }
         }
         if (newListHtml === "") {
             //You Win... no more locations
-            newListHtml = "<li id='' data-icon='heart'><a href='#'>You Win!</a></li>";
+            newListHtml = "<li id='' data-icon='heart'><a href='#'>Tour complete, well done!</a></li>";
         }
         $("#locationList").html(newListHtml);
         $("#locationList").listview().listview("refresh");

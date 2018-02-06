@@ -23,17 +23,21 @@
             }
             .ExpoImage {
                
-            } 
+            }
             .visited {
-                background-color: lightgreen !important;
-                color: white !important;
+                background-color: lightblue !important;
+                color: dimgray !important;
+            }
+            .notVisited {
+                background-color: oldlace !important;
+                color: dimgray !important;
             }
             .QRscanBtn{
                 margin:auto;
                 width:50% !important;
             }
-            .message{
-                background-color:white;
+            .message {
+                background-color: oldlace !important;
             }
             h1.ui-title.ExpoImage {                
                 padding: 0px !important;
@@ -93,7 +97,7 @@
             </div>
                         
             <div data-role="footer" data-id="foo2" data-position="fixed">
-                <h1>TCOE Career Expo</h1>
+                <h1 class="message">TCOE Career Expo</h1>
             </div>
         </div> 
         <!-- QR Scanner Page-->
@@ -117,7 +121,7 @@
                 <button id="scanQRcodeBtn" class="ui-btn QRscanBtn ui-icon-camera ui-btn-icon-left">QR Scan QR</button>
                 <p>Locations to visit:</p>
                 <ul id="locationList" data-role="listview">
-                    <li data-icon="location" ><a class="visited" href="#">Loading...</a></li>
+                    <li data-icon="location" ><a class="notVisited" href="#">Please sign in.</a></li>
                 </ul>
                 <br />
                 <p>Visited locations:</p>
@@ -128,7 +132,7 @@
             </div>
 
             <div data-role="footer" data-id="foo2" data-position="fixed">
-                <h1>TCOE Career Expo</h1>
+                <h1 class="message">Persistence!</h1>
             </div>
         </div> 
         <!-- Events page-->
@@ -155,26 +159,13 @@
                      
                     <!--<li data-icon="event"><a class="visited" href="#">Loading...</a></li>-->
                 </ul>
-                        <!--<label for="registration">Registration</label>
-                        <input type="checkbox" id="registration" checked>
-                    
-                        <label for="lunch">Lunch</label>
-                        <input type="checkbox" id="lunch" checked>
-                   
-                        <label for="vrdemo">VR Demo</label>
-                        <input type="checkbox" id="vrdemo">
-                   
-                        <label for="mathdemo">Math Demo</label>
-                        <input type="checkbox" id="mathdemo">
-                   
-                        <label for="resemedemo">Reseme Demo</label>
-                        <input type="checkbox" id="resemedemo">-->
+     
                    
             
             </div>
 
             <div data-role="footer" data-id="foo2" data-position="fixed">
-                <h1>TCOE Career Expo</h1>
+                <h1 class="message">Education!</h1>
             </div>
         </div> 
         <!-- Survey Page -->
@@ -202,7 +193,7 @@
             </div>
 
             <div data-role="footer" data-id="foo2" data-position="fixed">
-                <h1>TCOE Career Expo</h1>
+                <h1 class="message">Collaboration!</h1>
             </div>
         </div> 
 
@@ -247,7 +238,7 @@
             </div>
 
             <div data-role="main" class="ui-content">
-                <p id="scoreMessage">This is where your score will be</p>
+                <p id="scoreMessage">This is where your score will be.</p>
                 <button id="userGoBtn2">Ok, let's go!</button>
             </div>
             
