@@ -3,6 +3,7 @@
     $("#surveyOut").show();
     $("#surveyLink").hide();
     $("#surveyNotTime").hide();
+    $("#userGoBtn").hide();
     
     // QR Code Login Proceedure
     $("#userQRlogBtn").click(function () {
@@ -77,10 +78,18 @@
         $("#userQRlogBtn").hide();
         $("#logMessage").html(loginMessage);
         $("#userRegNumber").hide();
+
+        //trigger dialog close
+        $("#userGoBtn").click(function () {
+            //alert("button clicked");
+            $.mobile.changePage("#pageTour");
+        });
+        $("#userGoBtn").show();
+        //$("#userLogBtn").hide();
         $("#userLogBtn").html("logout");
 
 
-        //TODO: trigger dialog close
+        
 
         // Firebase mainMessage listener (realtime database!)
         // Only if logged in.
@@ -122,7 +131,7 @@
             //console.log(snapshot.val());
             $(".myDialog").html(snapshot.val().firstName);
             $(".myScore").html(snapshot.val().score);
-            $("#scoreMessage").html("Your current score is: " + snapshot.val().score + ". Scan more locations to gain points!"); //score modal message
+            $("#scoreMessage").html("Your current score is: " + snapshot.val().score + ". Scan more locations to gain points and have a better chance to win the end-of-event drawing!"); //score modal message
             participantObj = snapshot.val(); //holds everything offline in participantObj
             var visitedObj = participantObj.visitedLocations;
 
@@ -240,7 +249,12 @@
 
 
 
-    
+    //Score Go Button
+    //trigger dialog close
+    $("#userGoBtn2").click(function () {
+        //alert("button clicked");
+        $.mobile.changePage("#pageTour");
+    });
 
 
 
