@@ -104,6 +104,6 @@
   <plugin name="cordova-plugin-dialogs" spec="~1.3.3" />
   <preference name="Fullscreen" value="True" />
   <preference name="Orientation" value="portrait" />
-  <plugin name="cordova-plugin-splashscreen" spec="~5.0.2" />
   <preference name="ShowSplashScreenSpinner" value="false" />
+  <plugin name="cordova-plugin-splashscreen" spec="~5.0.2" />
 </widget>
