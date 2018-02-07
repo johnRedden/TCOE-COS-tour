@@ -27,17 +27,19 @@
             .visited {
                 background-color: lightblue !important;
                 color: dimgray !important;
+                box-shadow: 0px 5px 10px -2px;
             }
             .notVisited {
                 background-color: oldlace !important;
                 color: dimgray !important;
+                box-shadow: 0px 5px 10px -2px;
             }
             .QRscanBtn{
                 margin:auto;
                 width:50% !important;
             }
             .message {
-                background-color: oldlace !important;
+                background-color: white !important;
             }
             h1.ui-title.ExpoImage {                
                 padding: 0px !important;
@@ -58,6 +60,27 @@
                 margin-top: 100px;
                 background-image: url("images/cosLight.jpg");
                 background-color: #cccccc;
+            }
+            #appMessage {
+                box-shadow: 0px 5px 10px -2px;
+                margin-bottom: 20px;
+            }
+            #scanQRcodeBtn {
+                box-shadow: 0px 5px 10px -2px;
+            }
+            ul#eventList li {
+                box-shadow: 0px 5px 10px -2px;
+                margin: 10px;
+            }
+            .infoImg {
+                display: block;
+                margin: auto;
+            }
+            p#infoAboutUs {
+                text-align: center;
+                font-family: fantasy;
+                font-size: 18px;
+                margin: 10px;
             }
   
         </style>
@@ -88,12 +111,11 @@
             <div data-role="main" class="ui-content">
                 <!-- Cordova Load Screen-->
                 <p>Welcome to TCOE Career Exp.</p>
-                <div id="appMessage" class="ui-content message">App initializing...</div>
 
-                <div class="ui-content center-wrapper">
-                    <img src="images/careerexpo.png" alt="TCOE Logo"><br/>
-                    <img src="images/surge.png" alt="SURGE Logo"><br/>
-                </div>
+                <div id="appMessage" class="ui-content message">App initializing...</div>
+                <div id="appMessage" class="ui-content message"> <p id="infoAboutUs"> WELCOME TO </p> <img class="infoImg" src="images/blackline.png"><br /> <img class="infoImg" src="images/careerexpo.png" alt="TCOE Logo"><br /> </div>
+                <div id="appMessage" class="ui-content message"> <p id="infoAboutUs"> DEVELOPED BY </p><img class="infoImg" src="images/blackline.png"><br /> <img class="infoImg" src="images/surge.png" alt="SURGE Logo"><br /> <img class="infoImg" src="images/Astarlogo.png" alt="Astar Logo"> </div>'
+
             </div>
                         
             <div data-role="footer" data-id="foo2" data-position="fixed">
