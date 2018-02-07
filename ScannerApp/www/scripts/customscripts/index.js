@@ -44,9 +44,7 @@ var eventObjs = [];
         database = firebase.database();
 
         //TODO: put all firebase listeners here maybe??
-
-
-
+        
     }
 
     
