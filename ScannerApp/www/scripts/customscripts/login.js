@@ -214,6 +214,9 @@
             //window.alert(eventKeys[i]);
         }
         $("#eventList").append(newListHtml).trigger("create");
+
+        $("#eventList").html(newListHtml);
+        $("#eventList").listview().listview("refresh");
     }
 
 
