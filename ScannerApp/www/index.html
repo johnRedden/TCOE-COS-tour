@@ -98,6 +98,21 @@
             div#dialogLocationHint {
                 background-image: url(images/cosLight.jpg) !important;
             }
+            .menuStyle {
+                background-color: white;
+                box-shadow: 0px 5px 15px -5px;
+            }
+            .surgeNavBtn {
+                margin-top: 5px !important;
+                margin-bottom: 5px !important;
+            }
+            .surgeNavBar {
+                margin-top: 5px !important;
+            }
+            .bannerLogo{
+                margin-top: 5px;
+                height:45px;
+            }
   
         </style>
         <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
@@ -107,15 +122,13 @@
     </head>
     <body>
 
-        
-        
         <!-- Main app Page-->
         <div data-role="page" id="pageHome" class="COSbackground">
-            <div style="background-color:white; box-shadow:0px 5px 15px -5px" data-role="header" data-position="fixed" data-tap-toggle="false" data-tap-toggle="false" data-id="foo1" >
-                <a href="#dialogScore" class="myScore ui-btn ui-btn-inline ui-corner-all ui-icon-star ui-btn-icon-left">0</a>
-                <a href="#dialogLogin" class="myDialog ui-btn ui-btn-inline ui-corner-all ui-icon-user ui-btn-icon-right ">login</a>
-                <h1 class="ExpoImage"><img id="COSbanner" src="images/Logo.png" alt="Logo" align="middle" style="height:45px;"></h1>
-                <div data-role="navbar">
+            <div class="menuStyle" data-role="header" data-position="fixed" data-tap-toggle="false" data-id="foo1" >
+                <a href="#dialogScore" class="myScore ui-btn ui-btn-inline ui-corner-all ui-icon-star ui-btn-icon-left surgeNavBtn">0</a>
+                <a href="#dialogLogin" class="myDialog ui-btn ui-btn-inline ui-corner-all ui-icon-user ui-btn-icon-right surgeNavBtn">login</a>
+                <h1 class="ExpoImage"><img id="COSbanner" class="bannerLogo" src="images/Logo.png" alt="Logo"></h1>
+                <div class="surgeNavBar" data-role="navbar">
                     <ul>
                         <li> <a href="#pageHome" data-transition="none" data-icon="home" class="ui-btn-active ui-state-persist">Home</a> </li>
                         <li> <a href="#pageTour" data-transition="none" data-icon="navigation">Tour</a> </li>
@@ -139,11 +152,11 @@
         </div> 
         <!-- QR Scanner Page-->
         <div data-role="page" id="pageTour" class="COSbackground">
-            <div style="background-color:white; box-shadow:0px 5px 15px -5px" data-role="header" data-position="fixed" data-tap-toggle="false" data-id="foo1" >
-                <a href="#dialogScore" class="myScore ui-btn ui-btn-inline ui-corner-all ui-icon-star ui-btn-icon-left">0</a>
-                <a href="#dialogLogin" class="myDialog ui-btn ui-btn-inline ui-corner-all ui-icon-user ui-btn-icon-right ">login</a>
-                <h1 class="ExpoImage"><img src="images/Logo.png" alt="Logo" align="middle" style="height:45px;" ></h1>
-                <div data-role="navbar">
+            <div class="menuStyle" data-role="header" data-position="fixed" data-tap-toggle="false" data-id="foo1" >
+                <a href="#dialogScore" class="myScore ui-btn ui-btn-inline ui-corner-all ui-icon-star ui-btn-icon-left surgeNavBtn">0</a>
+                <a href="#dialogLogin" class="myDialog ui-btn ui-btn-inline ui-corner-all ui-icon-user ui-btn-icon-right surgeNavBtn">login</a>
+                <h1 class="ExpoImage"><img src="images/Logo.png" class="bannerLogo" alt="Logo"></h1>
+                <div class="surgeNavBar" data-role="navbar">
                     <ul>
                         <li> <a href="#pageHome" data-transition="none" data-icon="home">Home</a> </li>
                         <li> <a href="#pageTour" data-transition="none" data-icon="navigation" class="ui-btn-active ui-state-persist">Tour</a> </li>
@@ -169,16 +182,16 @@
             </div>
 
             <div data-role="footer" data-id="foo2" data-position="fixed" data-tap-toggle="false">
-                <h1 class="message">Persistence!</h1>
+                <h1 class="message">Visit All Locations</h1>
             </div>
         </div> 
         <!-- Events page-->
         <div data-role="page" id="pageEvents" class="COSbackground">
-            <div style="background-color:white; box-shadow:0px 5px 15px -5px" data-role="header" data-position="fixed" data-tap-toggle="false" data-id="foo1" >
-                <a href="#dialogScore" class="myScore ui-btn ui-btn-inline ui-corner-all ui-icon-star ui-btn-icon-left">0</a>
-                <a href="#dialogLogin" class="myDialog ui-btn ui-btn-inline ui-corner-all ui-icon-user ui-btn-icon-right ">login</a>
-                <h1 class="ExpoImage"><img src="images/Logo.png" alt="Logo" align="middle" style="height:45px;"></h1>
-                <div data-role="navbar">
+            <div class="menuStyle" data-role="header" data-position="fixed" data-tap-toggle="false" data-id="foo1" >
+                <a href="#dialogScore" class="myScore ui-btn ui-btn-inline ui-corner-all ui-icon-star ui-btn-icon-left surgeNavBtn">0</a>
+                <a href="#dialogLogin" class="myDialog ui-btn ui-btn-inline ui-corner-all ui-icon-user ui-btn-icon-right surgeNavBtn">login</a>
+                <h1 class="ExpoImage"><img src="images/Logo.png" alt="Logo" class="bannerLogo"></h1>
+                <div class="surgeNavBar" data-role="navbar">
                     <ul>
                         <li> <a href="#pageHome" data-transition="none" data-icon="home">Home</a> </li>
                         <li> <a href="#pageTour" data-transition="none" data-icon="navigation">Tour</a> </li>
@@ -189,29 +202,26 @@
             </div> 
 
             <div data-role="main" class="ui-content">
-                <p>Check the events you plan on attending.</p>
-  
+                
                               
                 <ul id="eventList" data-role="listview">
                      
                     <!--<li data-icon="event"><a class="visited" href="#">Loading...</a></li>-->
                 </ul>
      
-                   
-            
             </div>
 
             <div data-role="footer" data-id="foo2" data-position="fixed" data-tap-toggle="false">
-                <h1 class="message">Education!</h1>
+                <h1 class="message">Join Us</h1>
             </div>
         </div> 
         <!-- Survey Page -->
         <div data-role="page" id="pageSurvey" class="COSbackground">
-            <div style="background-color:white; box-shadow:0px 5px 15px -5px" data-role="header" data-position="fixed" data-tap-toggle="false" data-id="foo1" >
-                <a href="#dialogScore" class="myScore ui-btn ui-btn-inline ui-corner-all ui-icon-star ui-btn-icon-left">0</a>
-                <a href="#dialogLogin" class="myDialog ui-btn ui-btn-inline ui-corner-all ui-icon-user ui-btn-icon-right ">login</a>
-                <h1 class="ExpoImage"><img src="images/Logo.png" alt="Logo" align="middle" style="height:45px;"></h1>
-                <div data-role="navbar">
+            <div class="menuStyle" data-role="header" data-position="fixed" data-tap-toggle="false" data-id="foo1" >
+                <a href="#dialogScore" class="myScore ui-btn ui-btn-inline ui-corner-all ui-icon-star ui-btn-icon-left surgeNavBtn">0</a>
+                <a href="#dialogLogin" class="myDialog ui-btn ui-btn-inline ui-corner-all ui-icon-user ui-btn-icon-right surgeNavBtn">login</a>
+                <h1 class="ExpoImage"><img src="images/Logo.png" alt="Logo" class="bannerLogo"></h1>
+                <div class="surgeNavBar" data-role="navbar">
                     <ul>
                         <li> <a href="#pageHome" data-transition="none" data-icon="home">Home</a> </li>
                         <li> <a href="#pageTour" data-transition="none" data-icon="navigation">Tour</a> </li>
@@ -230,7 +240,7 @@
             </div>
 
             <div data-role="footer" data-id="foo2" data-position="fixed" data-tap-toggle="false">
-                <h1 class="message">Collaboration!</h1>
+                <h1 class="message">Feedback</h1>
             </div>
         </div> 
 
