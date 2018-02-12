@@ -187,7 +187,7 @@
     
 
         var eventsRef = database.ref("events");
-        eventsRef.orderByChild("text").on("value", function (snapshot) {
+        eventsRef.orderByChild("startTime").on("value", function (snapshot) {
             //Clear the local arrays
             eventKeys = [];
             eventObjs = [];
@@ -210,7 +210,8 @@
         var registration = "ok";
         var checked = "";
         for (var i = 0; i < eventKeys.length; i++) {
-            newListHtml += "<li><label for='" + eventObjs[i].text + "'><h3>" + eventObjs[i].text + "      <span class='ui-mini'>Start Time: " + eventObjs[i].startTime + "</span></h3><p>" + eventObjs[i].description + "</p></label><input type='checkbox' id='" + eventObjs[i].text + "'></li>";       
+            newListHtml += "<li><h3>" + eventObjs[i].text + "</h3><p>" + formatAMPM(eventObjs[i].startTime) + " to " + formatAMPM(eventObjs[i].endTime) + "<br/>" + eventObjs[i].description + "</p></li>";       
+            //newListHtml += "<li><label for='" + eventObjs[i].text + "'><h3>" + eventObjs[i].text + "</h3><span class='ui-mini'>" + formatAMPM(eventObjs[i].startTime) + " to " + formatAMPM(eventObjs[i].endTime) +"</span><p>" + eventObjs[i].description + "</p></label><input type='checkbox' id='" + eventObjs[i].text + "'></li>";       
             //window.alert(eventKeys[i]);
         }
         $("#eventList").append(newListHtml).trigger("create");
@@ -259,7 +260,18 @@
         $.mobile.changePage("#pageTour");
     });
 
-
+    function formatAMPM(arg) {
+        console.log(arg.substring(0, 2));
+        var hours = parseInt(arg.substring(0, 2));
+        var minutes = parseInt(arg.substring(3, 5));
+        console.log(hours);
+        var ampm = hours >= 12 ? 'pm' : 'am';
+        hours = hours % 12;
+        hours = hours ? hours : 12; // the hour '0' should be '12'
+        minutes = minutes < 10 ? '0' + minutes : minutes;
+        var strTime = hours + ':' + minutes + ' ' + ampm;
+        return strTime;
+    }
 
 
 });
