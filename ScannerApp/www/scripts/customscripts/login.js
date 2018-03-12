@@ -261,10 +261,10 @@
     });
 
     function formatAMPM(arg) {
-        console.log(arg.substring(0, 2));
+        //console.log(arg.substring(0, 2));
         var hours = parseInt(arg.substring(0, 2));
         var minutes = parseInt(arg.substring(3, 5));
-        console.log(hours);
+       // console.log(hours);
         var ampm = hours >= 12 ? 'pm' : 'am';
         hours = hours % 12;
         hours = hours ? hours : 12; // the hour '0' should be '12'

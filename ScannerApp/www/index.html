@@ -113,6 +113,9 @@
                 margin-top: 5px;
                 height:45px;
             }
+            .emImportant{
+                color: darkred;
+            }
   
         </style>
         <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
@@ -143,6 +146,7 @@
                 <div id="appMessage" class="ui-content message">App initializing...</div>
                 <div id="appMessage" class="ui-content message"> <p id="infoAboutUs"> WELCOME TO </p> <img class="infoImg" src="images/blackline.png"><br /> <img class="infoImg" src="images/careerexpo.png" alt="TCOE Logo"><br /> </div>
                 <div id="appMessage" class="ui-content message"> <p id="infoAboutUs"> DEVELOPED BY </p><img class="infoImg" src="images/blackline.png"><br /> <img class="infoImg" src="images/surge.png" alt="SURGE Logo"><br /> <img class="infoImg" src="images/Astarlogo.png" alt="Astar Logo"> </div>'
+                
 
             </div>
                         
@@ -251,12 +255,14 @@
             </div>
 
             <div data-role="main" class="ui-content">
-                <p id="logQRmessage">Scan Using QR Code</p>
+                <p id="logQRmessage"><em class="emImportant">Internet Connection Needed.</em><br/></p>
                 <button id="userQRlogBtn">QR Login</button>
                 <p id="logMessage">Or Registration code found in your packet.</p>
                 <input id="userRegNumber" type="text" name="number" pattern="[0-9]*" placeholder="Enter Reg. Code">
                 <button id="userGoBtn">Ok, let's go!</button>
-                <button id="userLogBtn">login</button>
+                <button id="userLogBtn">Manual Login</button>
+                <p><em class="emImportant"><strong>Privacy Policy:</strong> This app collects and transmits text only from QR codes detected by the camera.  No personal user data nor camera photos are collected or shared in any way.</em></p>
+
             </div>
 
             <div data-role="footer">

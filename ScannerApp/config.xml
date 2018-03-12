@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<widget xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps" id="com.eduNetSystems.tcoeexpo" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" defaultlocale="en-US">
+<widget xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps" id="com.eduNetSystems.tcoeexpo" version="1.1.0" xmlns="http://www.w3.org/ns/widgets" defaultlocale="en-US">
   <name>TCOE Expo</name>
-  <description>A QR code based COS campus tour app designed for TCOE carreer day.</description>
+  <description>A QR code based tour app designed for TCOE college and career expo.</description>
   <author href="http://cordova.io" email="dev@cordova.apache.org">Taco Team Tango</author>
   <vs:template-name>BlankJS</vs:template-name>
   <vs:toolsetVersion>6.3.1</vs:toolsetVersion>
