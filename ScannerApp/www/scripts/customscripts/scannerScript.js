@@ -3,14 +3,22 @@
 
     $("#scanQRcodeBtn").click(function () {
         //console.log("QR button clicked")
-        
-        scan();
+        if (navigator.connection.type !== Connection.NONE)
+            scan();
+        else
+            alert(internetMess);
     });
 
     function scan() {
+
         //cordova takes care of business!
         cordova.plugins.barcodeScanner.scan(
             function (result) {
+
+                if (navigator.connection.type == Connection.NONE) {
+                    alert(internetMess);
+                    return;
+                };
                 
                 if (!result.cancelled) {
                    

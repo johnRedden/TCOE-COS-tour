@@ -7,7 +7,11 @@
     
     // QR Code Login Proceedure
     $("#userQRlogBtn").click(function () {
-        loginScan();
+        if (navigator.connection.type !== Connection.NONE)
+            loginScan();
+        else
+            alert(internetMess);
+        
     });
 
     // Reg. Number Login Proceedure
@@ -21,7 +25,7 @@
         }
         
         //get the number from the input box
-        var userRegNum = $("#userRegNumber").val();
+        var userRegNum = $("#userRegNumber").val().toUpperCase();
 
         // call database to get information about participant with particular reg. number
         var ref = database.ref("participants");
@@ -50,6 +54,12 @@
         //cordova takes care of business!
         cordova.plugins.barcodeScanner.scan(
             function (result) {
+
+                if (navigator.connection.type == Connection.NONE) {
+                    alert(internetMess);
+                    return;
+                };
+
                 if (!result.cancelled) {
                     //only want QR code scanner functionality
                     if (result.format === "QR_CODE") {
