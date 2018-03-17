@@ -31,10 +31,11 @@ var eventObjs = [];
         document.addEventListener('resume', onResume.bind(this), false);
 
        
-
-        
         // TODO: Cordova has been loaded. Perform any initialization that requires Cordova here.
-        $("#appMessage").html("Please log in." + navigator.connection.type);
+        if (navigator.connection.type == Connection.NONE)
+            $("#appMessage").html("Internet Connection Required.");
+        else
+            $("#appMessage").html("Please log in.");
 
         // Initialize Firebase
         var config = {
